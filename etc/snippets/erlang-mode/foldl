@@ -1,0 +1,7 @@
+# name: lists:foldl
+# key: foldl
+# --
+lists:foldl(fun(${1:Item}, ${2:Acc}) ->
+              ${3}
+            end, ${4}, ${5}).
+$0
