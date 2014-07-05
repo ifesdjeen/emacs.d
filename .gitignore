@@ -24,3 +24,7 @@ tramp
 tmp/*
 .smex-items
 swank/*
+.cask/*
+elpa*
+.*
+*last
