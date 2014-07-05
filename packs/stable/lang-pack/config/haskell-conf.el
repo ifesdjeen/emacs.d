@@ -2,18 +2,20 @@
 (require 'haskell-font-lock)
 (require 'haskell-simple-indent)
 (require 'haskell-mode)
+(require 'haskell-mode-autoloads)
 
 
 (add-to-list 'auto-mode-alist        '("\\.\\(?:[gh]s\\|hi\\)\\'" . haskell-mode))
 (add-to-list 'auto-mode-alist        '("\\.l[gh]s\\'" . literate-haskell-mode))
-(add-to-list 'interpreter-mode-alist '("runghc" . haskell-mode))
-(add-to-list 'interpreter-mode-alist '("runhaskell" . haskell-mode))
+;; (add-to-list 'interpreter-mode-alist '("runghc" . haskell-mode))
+;; (add-to-list 'interpreter-mode-alist '("runhaskell" . haskell-mode))
 
 
 ;; Customization
 (custom-set-variables
  ;; Use cabal-dev for the GHCi session. Ensures our dependencies are in scope.
- '(haskell-process-type 'ghci)
+ '(haskell-process-type 'cabal-dev)
+ ;; '(haskell-process-type 'ghci)
 
  ;; Use notify.el (if you have it installed) at the end of running
  ;; Cabal commands or generally things worth notifying.

@@ -54,7 +54,8 @@
   ;; Arbitrarily give preference to hugs over ghci.
   (or (cond
        ((executable-find "hugs") "hugs \"+.\"")
-       ((executable-find "ghci") "ghci"))
+       ((executable-find "ghci") "cabal repl")
+       )
       "hugs \"+.\"")
   "The name of the command to start the inferior Haskell process.
 The command can include arguments."
