@@ -4,6 +4,9 @@
 (setq mc/cmds-to-run-for-all
       '(
         align-cljlet
+        c-electric-brace
+        c-electric-delete-forward
+        c-electric-pound
         clipboard-kill-region
         cua-copy-region
         cua-cut-region
@@ -15,24 +18,38 @@
         erlang-electric-gt
         erlang-electric-lt
         erlang-electric-semicolon
+        haskell-indentation-delete-char
+        haskell-mode-contextual-space
+        haskell-newline-and-indent
         ido-hacks-execute-extended-command
+        isearch-backward-regexp
         isearch-forward-regexp
+        isearch-other-control-char
         live-paredit-forward-kill-sexp
         org-beginning-of-line
+        org-delete-char
+        org-end-of-line
         org-return
         org-self-insert-command
+        paredit-close-square
+        paredit-doublequote
         paredit-forward-barf-sexp
         paredit-forward-delete
         paredit-forward-slurp-sexp
         paredit-kill
         paredit-open-curly
         paredit-open-round
+        paredit-open-square
+        paredit-semicolon
         reindent-then-newline-and-indent
+        sgml-slash
+        win-switch-exit-and-redo
         yas-expand
         ))
 
 (setq mc/cmds-to-run-once
       '(
+        isearch-delete-char
         isearch-printing-char
         win-switch-dispatch
         ))

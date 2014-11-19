@@ -26,14 +26,14 @@
 (add-to-list 'same-window-buffer-names "*cider*")
 
 ;;Auto Complete
-(live-add-pack-lib "ac-nrepl")
-(require 'ac-nrepl )
+;;(live-add-pack-lib "ac-nrepl")
+;;(require 'ac-nrepl )
 
-(add-hook 'cider-mode-hook 'ac-nrepl-setup)
-(add-hook 'cider-repl-mode-hook 'ac-nrepl-setup)
+;; (add-hook 'cider-mode-hook 'ac-nrepl-setup)
+;;(add-hook 'cider-repl-mode-hook 'ac-nrepl-setup)
 
-(eval-after-load "auto-complete"
-  '(add-to-list 'ac-modes 'cider-mode))
+;;(eval-after-load "auto-complete"
+;;  '(add-to-list 'ac-modes 'cider-mode))
 
 ;; Specify the print length to be 100 to stop infinite sequences killing
 ;; things. This might be dangerous for some people relying on

@@ -163,7 +163,7 @@
 ;;allow the deletion of words:
 ;;backward kill word (forward kill word is M-d)
 (global-set-key (kbd "C-\\") 'backward-kill-word)
-(define-key ido-file-completion-map (kbd "C-\\") 'backward-kill-word)
+;; (define-key ido-file-completion-map (kbd "C-\\") 'backward-kill-word)
 (define-key paredit-mode-map (kbd "C-\\") 'paredit-backward-kill-word)
 
 ;;kill line backwards
@@ -205,15 +205,15 @@
 (global-set-key (kbd "C-M-r") 'isearch-backward-regexp)
 
 ;; Jump to a definition in the current file.
-(global-set-key (kbd "C-x C-i") 'idomenu)
+;; (global-set-key (kbd "C-x C-i") 'idomenu)
 
 ;; File
-(global-set-key (kbd "C-x M-f")   'ido-find-file-other-window)
-(global-set-key (kbd "C-x C-M-f") 'find-file-in-project)
-(global-set-key (kbd "C-x f")     'live-recentf-ido-find-file)
-(global-set-key (kbd "C-x C-r")   'ido-recentf-open)
-(global-set-key (kbd "M-`")       'file-cache-minibuffer-complete)
-(global-set-key (kbd "C-x C-b")   'ibuffer)
+;; (global-set-key (kbd "C-x M-f")   'ido-find-file-other-window)
+;; (global-set-key (kbd "C-x C-M-f") 'find-file-in-project)
+;; (global-set-key (kbd "C-x f")     'live-recentf-ido-find-file)
+;; (global-set-key (kbd "C-x C-r")   'ido-recentf-open)
+;; (global-set-key (kbd "M-`")       'file-cache-minibuffer-complete)
+;; (global-set-key (kbd "C-x C-b")   'ibuffer)
 
 ;; Window switching.
 (global-set-key (kbd "C-x O") (lambda () (interactive) (other-window -1))) ;; back one
