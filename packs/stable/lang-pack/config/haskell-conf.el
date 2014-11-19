@@ -1,4 +1,7 @@
 (live-add-pack-lib "haskell-mode")
+(live-add-pack-lib "flycheck-haskell")
+(live-add-pack-lib "flycheck-hdevtools")
+
 (require 'haskell-font-lock)
 (require 'haskell-simple-indent)
 (require 'haskell-mode)
@@ -33,7 +36,10 @@
 ;; Haskell main editing mode key bindings.
 (defun haskell-hook ()
   ;; Use simple indentation.
-  (turn-on-haskell-simple-indent)
+  ;; (turn-on-haskell-simple-indent)
+  (turn-on-haskell-doc-mode)
+  (turn-on-haskell-indentation)
+
   (define-key haskell-mode-map (kbd "<return>") 'haskell-simple-indent-newline-same-col)
   (define-key haskell-mode-map (kbd "C-<return>") 'haskell-simple-indent-newline-indent)
 
@@ -48,7 +54,7 @@
   (define-key haskell-mode-map (kbd "C-`") 'haskell-interactive-bring)
 
   ;; Build the Cabal project.
-  (define-key haskell-mode-map (kbd "C-c C-c") 'haskell-process-cabal-build)
+  (define-key haskell-mode-map (kbd "C-c C-c") 'haskell-compile)
   ;; Interactively choose the Cabal command to run.
   (define-key haskell-mode-map (kbd "C-c c") 'haskell-process-cabal)
 
@@ -78,11 +84,26 @@
   (define-key haskell-mode-map (kbd "C-<left>")
     (lambda ()
       (interactive)
-      (haskell-move-nested -1))))
+      (haskell-move-nested -1)))
 
-;; Useful to have these keybindings for .cabal files, too.
-(defun haskell-cabal-hook ()
+
   (define-key haskell-cabal-mode-map (kbd "C-c C-c") 'haskell-process-cabal-build)
   (define-key haskell-cabal-mode-map (kbd "C-c c") 'haskell-process-cabal)
   (define-key haskell-cabal-mode-map (kbd "C-`") 'haskell-interactive-bring)
-  (define-key haskell-cabal-mode-map [?\C-c ?\C-z] 'haskell-interactive-switch))
+  (define-key haskell-cabal-mode-map [?\C-c ?\C-z] 'haskell-interactive-switch)
+
+  (define-key haskell-cabal-mode-map (kbd "C-c h") 'haskell-hoogle)
+  )
+
+;; Useful to have these keybindings for .cabal files, too.
+(defun haskell-cabal-hook ()
+  )
+
+
+(require 'flycheck-haskell)
+
+(eval-after-load 'flycheck
+  '(add-hook 'flycheck-mode-hook #'flycheck-haskell-setup))
+
+;; (eval-after-load 'flycheck
+;;   '(require 'flycheck-hdevtools))
