@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: <-
+# key: <-
+# --
+${2:result} <- ${1:action}

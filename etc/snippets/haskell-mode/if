@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: if
+# key: if
+# --
+if ${1:cond}
+  then ${2:truthy}
+  else ${3:falsy}
