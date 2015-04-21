@@ -6,6 +6,8 @@
 (depends-on "yasnippet")
 (depends-on "multiple-cursors")
 (depends-on "magit")
+(depends-on "ace-jump-mode")
+(depends-on "expand-region")
 
 ;;(depends-on "bind-key")
 ;;(depends-on "dash")
