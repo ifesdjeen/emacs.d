@@ -6,7 +6,9 @@
         align-cljlet
         c-electric-brace
         c-electric-delete-forward
+        c-electric-paren
         c-electric-pound
+        c-electric-semi&comma
         clipboard-kill-region
         cua-copy-region
         cua-cut-region
@@ -29,8 +31,11 @@
         org-beginning-of-line
         org-delete-char
         org-end-of-line
+        org-force-self-insert
+        org-kill-line
         org-return
         org-self-insert-command
+        paredit-backslash
         paredit-close-square
         paredit-doublequote
         paredit-forward-barf-sexp
@@ -44,11 +49,13 @@
         reindent-then-newline-and-indent
         sgml-slash
         win-switch-exit-and-redo
+        yaml-electric-dash-and-dot
         yas-expand
         ))
 
 (setq mc/cmds-to-run-once
       '(
+        align-regexp
         isearch-delete-char
         isearch-printing-char
         win-switch-dispatch
