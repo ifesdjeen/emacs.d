@@ -5,6 +5,7 @@
 (depends-on "pallet")
 (depends-on "yasnippet")
 (depends-on "multiple-cursors")
+(depends-on "magit")
 
 ;;(depends-on "bind-key")
 ;;(depends-on "dash")
@@ -16,7 +17,7 @@
 ;;(depends-on "flycheck-cask")
 ;;(depends-on "htmlize")
 ;;(depends-on "idle-highlight-mode")
-;;(depends-on "magit")
+;;
 
 ;;(depends-on "nyan-mode")
 ;;(depends-on "popwin")
