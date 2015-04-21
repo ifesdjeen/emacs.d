@@ -8,6 +8,7 @@
 (depends-on "magit")
 (depends-on "ace-jump-mode")
 (depends-on "expand-region")
+(depends-on "org")
 
 ;;(depends-on "bind-key")
 ;;(depends-on "dash")
