@@ -1,7 +1,8 @@
 # -*- mode: snippet -*-
 # name: dd
 # key: dd
+# expand-env: ((yas-indent-line 'fixed))
 # --
 -- |
--- |  $0
+-- | ${1:comment}
 -- |
