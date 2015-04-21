@@ -14,4 +14,3 @@
 (live-load-config-file "glsl-conf.el")
 (live-load-config-file "extempore-conf.el")
 (live-load-config-file "haskell-conf.el")
-(live-load-config-file "agda-conf.el")
