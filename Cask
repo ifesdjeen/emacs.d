@@ -3,6 +3,8 @@
 
 (depends-on "cask")
 (depends-on "pallet")
+(depends-on "yasnippet")
+(depends-on "multiple-cursors")
 
 ;;(depends-on "bind-key")
 ;;(depends-on "dash")
@@ -15,7 +17,7 @@
 ;;(depends-on "htmlize")
 ;;(depends-on "idle-highlight-mode")
 ;;(depends-on "magit")
-;;(depends-on "multiple-cursors")
+
 ;;(depends-on "nyan-mode")
 ;;(depends-on "popwin")
 ;;(depends-on "prodigy")
@@ -25,5 +27,5 @@
 ;;(depends-on "smex")
 ;;(depends-on "use-package")
 ;;(depends-on "web-mode")
-;;(depends-on "yasnippet")
+
 
