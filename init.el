@@ -3,6 +3,9 @@
 ;; This is where everything starts. Do you remember this place?
 ;; It remembers you...
 
+(require 'cask "/usr/local/share/emacs/site-lisp/cask.el")
+(cask-initialize)
+
 (setq live-ascii-art-logo ";;
 ;;     MM\"\"\"\"\"\"\"\"`M
 ;;     MM  mmmmmmmM
@@ -221,6 +224,7 @@
 
 (if (not custom-file)
     (setq custom-file (concat live-custom-dir "custom-configuration.el")))
+
 (when (file-exists-p custom-file)
   (load custom-file))
 
