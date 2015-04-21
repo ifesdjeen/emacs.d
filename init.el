@@ -140,7 +140,7 @@
  live-backups-dir  (file-name-as-directory (concat live-tmp-dir  "backups"))
  live-custom-dir   (file-name-as-directory (concat live-etc-dir  "custom"))
  live-load-pack-dir nil
- live-disable-zone nil)
+ live-disable-zone t)
 
 ;; create tmp dirs if necessary
 (make-directory live-etc-dir t)
