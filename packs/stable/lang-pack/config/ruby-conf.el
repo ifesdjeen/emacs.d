@@ -1,7 +1,5 @@
-(live-add-pack-lib "ruby-mode")
 (require 'ruby-mode)
 (require 'inf-ruby)
-(require 'custom-ruby)
 
 (add-to-list 'auto-mode-alist '("\\.rb$" . ruby-mode))
 (add-to-list 'auto-mode-alist '("\\.ru$" . ruby-mode))
