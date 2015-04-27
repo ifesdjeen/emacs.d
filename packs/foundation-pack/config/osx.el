@@ -23,7 +23,6 @@
 (setq system-name (car (split-string system-name "\\.")))
 
 ;; Ensure the exec-path honours the shell PATH
-(live-add-pack-lib "exec-path-from-shell")
 (require 'exec-path-from-shell)
 (exec-path-from-shell-initialize)
 

@@ -5,7 +5,13 @@
 (depends-on "pallet")
 (depends-on "yasnippet")
 (depends-on "multiple-cursors")
+
+;; Git
 (depends-on "magit")
+
+(depends-on "yaml-mode")
+(depends-on "markdown-mode")
+
 ;; Quick cursor jump mode
 (depends-on "ace-jump-mode")
 (depends-on "expand-region")
@@ -41,6 +47,7 @@
 ;; Text
 (depends-on "deft")
 
+(depends-on "color-theme")
 ;;
 ;; Customizations
 ;;
@@ -63,6 +70,7 @@
 
 (depends-on "xcscope")
 
+(depends-on "popwin")
 ;;(depends-on "bind-key")
 ;;
 ;;(depends-on "drag-stuff")
@@ -76,7 +84,7 @@
 ;;
 
 ;;(depends-on "nyan-mode")
-;;(depends-on "popwin")
+
 ;;(depends-on "prodigy")
 
 
@@ -84,3 +92,7 @@
 ;;(depends-on "smex")
 ;;(depends-on "use-package")
 ;;(depends-on "web-mode")
+
+(depends-on "exec-path-from-shell")
+(depends-on "elisp-slime-nav")
+(depends-on "smooth-scrolling")
