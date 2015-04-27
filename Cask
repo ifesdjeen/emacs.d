@@ -55,6 +55,14 @@
 (depends-on "haskell-mode")
 (depends-on "flycheck-haskell")
 
+(depends-on "ruby-mode")
+(depends-on "inf-ruby")
+
+(depends-on "ag")
+(depends-on "pkg-info")
+
+(depends-on "xcscope")
+
 ;;(depends-on "bind-key")
 ;;
 ;;(depends-on "drag-stuff")
