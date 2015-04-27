@@ -1,11 +1,7 @@
-(live-add-pack-lib "haskell-mode")
-(live-add-pack-lib "flycheck-haskell")
-(live-add-pack-lib "flycheck-hdevtools")
-
 (require 'haskell-font-lock)
 (require 'haskell-simple-indent)
 (require 'haskell-mode)
-(require 'haskell-mode-autoloads)
+;; (require 'haskell-mode-autoloads)
 
 
 (add-to-list 'auto-mode-alist        '("\\.\\(?:[gh]s\\|hi\\)\\'" . haskell-mode))

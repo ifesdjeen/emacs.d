@@ -47,6 +47,7 @@
         paredit-open-square
         paredit-semicolon
         reindent-then-newline-and-indent
+        save-buffers-kill-terminal
         sgml-slash
         win-switch-exit-and-redo
         yaml-electric-dash-and-dot

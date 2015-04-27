@@ -1,10 +1,5 @@
 ;; org mode config
 
-(live-add-pack-lib "org-mode/lisp")
-(live-add-pack-lib "org-mode/contrib/lisp")
-
-
-
 ;; Fix conflicts (http://orgmode.org/org.html#Conflicts)
 
 ;; windmove compatibility
