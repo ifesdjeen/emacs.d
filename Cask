@@ -71,6 +71,10 @@
 (depends-on "xcscope")
 
 (depends-on "popwin")
+
+(depends-on "smex")
+(depends-on "undo-tree")
+
 ;;(depends-on "bind-key")
 ;;
 ;;(depends-on "drag-stuff")
@@ -89,7 +93,6 @@
 
 
 ;;(depends-on "smartparens")
-;;(depends-on "smex")
 ;;(depends-on "use-package")
 ;;(depends-on "web-mode")
 
