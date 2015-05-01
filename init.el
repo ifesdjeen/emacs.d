@@ -164,7 +164,11 @@
 (live-add-packs '(~/.emacs.d/packs/org-pack))
 (live-add-packs '(~/.emacs.d/packs/clojure-pack))
 (live-add-packs '(~/.emacs.d/packs/bindings-pack))
-
+(live-add-packs '(~/.emacs.d/packs/c-pack))
+(live-add-packs '(~/.emacs.d/packs/customizations))
+(live-add-packs '(~/.emacs.d/packs/text-utils))
+(live-add-packs '(~/.emacs.d/packs/solarized-theme))
+(live-add-packs '(~/.emacs.d/packs/erlang))
 
 
 ;; Helper fn for loading live packs

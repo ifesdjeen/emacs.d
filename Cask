@@ -75,6 +75,11 @@
 (depends-on "smex")
 (depends-on "undo-tree")
 
+;;
+;; Erlang
+;;
+(depends-on "erlang")
+
 ;;(depends-on "bind-key")
 ;;
 ;;(depends-on "drag-stuff")
