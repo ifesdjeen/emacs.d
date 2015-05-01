@@ -182,14 +182,14 @@
 ;; Load `~/.emacs-live.el`. This allows you to override variables such
 ;; as live-packs (allowing you to specify pack loading order)
 ;; Does not load if running in safe mode
-(let* ((pack-file (concat (file-name-as-directory "~") ".emacs-live.el")))
-  (if (and (file-exists-p pack-file) (not live-safe-modep))
-      (load-file pack-file)))
+;; (let* ((pack-file (concat (file-name-as-directory "~") ".emacs-live.el")))
+;;   (if (and (file-exists-p pack-file) (not live-safe-modep))
+;;       (load-file pack-file)))
 
 ;; Load all packs - Power Extreme!
 (mapc (lambda (pack-dir)
-          (live-load-pack pack-dir))
-        (live-pack-dirs))
+        (live-load-pack pack-dir))
+      (live-pack-dirs))
 
 (setq live-welcome-messages
       (if (live-user-first-name-p)
@@ -207,12 +207,12 @@
 
 (when live-supported-emacsp
   (setq initial-scratch-message (concat live-ascii-art-logo " Version " live-version
-                                                                (if live-safe-modep
-                                                                    "
+                                        (if live-safe-modep
+                                            "
 ;;                                                     --*SAFE MODE*--"
-                                                                  "
+                                          "
 ;;"
-                                                                  ) "
+                                          ) "
 ;;           http://github.com/overtone/emacs-live
 ;;
 ;; "                                                      (live-welcome-message) "
