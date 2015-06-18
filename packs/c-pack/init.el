@@ -6,7 +6,7 @@
 ;; Load bindings config
 (live-load-config-file "bindings.el")
 
-(live-add-pack-lib "/xcscope/")
+;;(live-add-pack-lib "/xcscope/")
 
 (require 'xcscope)
 (cscope-setup)
