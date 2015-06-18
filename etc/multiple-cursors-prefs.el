@@ -21,8 +21,12 @@
         erlang-electric-lt
         erlang-electric-semicolon
         haskell-indentation-delete-char
+        haskell-indentation-newline-and-indent
+        haskell-interactive-mode-return
         haskell-mode-contextual-space
         haskell-newline-and-indent
+        helm-projectile-find-file
+        ido-find-file
         ido-hacks-execute-extended-command
         isearch-backward-regexp
         isearch-forward-regexp
@@ -59,5 +63,6 @@
         align-regexp
         isearch-delete-char
         isearch-printing-char
+        next-multiframe-window
         win-switch-dispatch
         ))

@@ -2,6 +2,16 @@
 (require 'cider)
 (require 'cider-macroexpansion)
 (require 'cider-test)
+(require 'cider-util)
+(require 'cider-stacktrace)
+
+;; (setq debug-on-error t)
+
+(setq cider-repl-use-pretty-printing t)
+(setq cider-show-error-buffer nil)
+
+(require 'company)
+
 (defun live-windows-hide-eol ()
  "Do not show ^M in files containing mixed UNIX and DOS line endings."
  (interactive)
@@ -44,3 +54,9 @@
 (add-hook 'nrepl-connected-hook 'live-nrepl-set-print-length)
 
 (setq nrepl-port "4555")
+
+
+; Patch for cider-test
+;(when line
+;;          (forward-line (1- line))
+;;)

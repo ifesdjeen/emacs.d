@@ -126,3 +126,11 @@
                 '(haskell-left-arrows
                   (regexp . "\\(\\s-+\\)\\(<-\\|←\\)\\s-+")
                   (modes quote (haskell-mode literate-haskell-mode)))))
+
+
+
+;;
+;; Flymake
+;;
+(require 'flymake-hlint) ;; not needed if installed via package
+(add-hook 'haskell-mode-hook 'flymake-hlint-load)

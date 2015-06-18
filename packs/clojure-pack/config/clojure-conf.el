@@ -1,4 +1,4 @@
-(live-add-pack-lib "clojure-mode")
+;;(live-add-pack-lib "clojure-mode")
 
 (eval-after-load 'clojure-mode
   '(font-lock-add-keywords
@@ -25,6 +25,7 @@
   '(add-to-list 'ffip-patterns "*.clj"))
 
 (require 'clojure-mode)
+
 
 (add-hook 'clojure-mode-hook
           (lambda ()
@@ -57,14 +58,15 @@
   (add-hook (intern (concat (symbol-name x) "-mode-hook")) 'rainbow-delimiters-mode))
 
 ;; Pull in the awesome clj-refactor lib by magnars
-(live-add-pack-lib "clj-refactor")
-(require 'clj-refactor)
-(add-hook 'clojure-mode-hook (lambda ()
-                               (clj-refactor-mode 1)
-                               (cljr-add-keybindings-with-prefix "C-c C-m")))
 
-(define-key clojure-mode-map (kbd "C-:") 'cljr-cycle-stringlike)
-(define-key clojure-mode-map (kbd "C->") 'cljr-cycle-coll)
+;; (live-add-pack-lib "clj-refactor")
+;; (require 'clj-refactor)
+;; (add-hook 'clojure-mode-hook (lambda ()
+;;                                (clj-refactor-mode 1)
+;;                                (cljr-add-keybindings-with-prefix "C-c C-m")))
+
+;; (define-key clojure-mode-map (kbd "C-:") 'cljr-cycle-stringlike)
+;; (define-key clojure-mode-map (kbd "C->") 'cljr-cycle-coll)
 
 (defun live-warn-when-cider-not-connected ()
       (interactive)
@@ -75,3 +77,12 @@
 (define-key clojure-mode-map (kbd "C-c C-e") 'live-warn-when-cider-not-connected)
 (define-key clojure-mode-map (kbd "C-c C-l") 'live-warn-when-cider-not-connected)
 (define-key clojure-mode-map (kbd "C-c C-r") 'live-warn-when-cider-not-connected)
+
+
+(add-hook 'cider-mode-hook #'eldoc-mode)
+(setq nrepl-hide-special-buffers t)
+(setq cider-auto-jump-to-error 'errors-only)
+(setq cider-repl-display-in-current-window t)
+
+(add-hook 'cider-repl-mode-hook #'company-mode)
+(add-hook 'cider-mode-hook #'company-mode)

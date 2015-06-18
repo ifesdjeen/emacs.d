@@ -29,9 +29,10 @@
 (depends-on "clojure-mode")
 (depends-on "cider")
 (depends-on "align-cljlet")
-(depends-on "clj-refactor")
+;; (depends-on "clj-refactor")
 (depends-on "fuzzy")
 (depends-on "eval-sexp-fu")
+(depends-on "slamhound")
 
 (depends-on "mic-paren")
 (depends-on "rainbow-delimiters")
@@ -60,6 +61,7 @@
 (depends-on "flycheck")
 
 (depends-on "haskell-mode")
+(depends-on "flymake-hlint")
 (depends-on "flycheck-haskell")
 
 (depends-on "ruby-mode")
@@ -104,3 +106,5 @@
 (depends-on "exec-path-from-shell")
 (depends-on "elisp-slime-nav")
 (depends-on "smooth-scrolling")
+
+(depends-on "babel")
