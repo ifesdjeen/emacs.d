@@ -73,3 +73,13 @@
   (let ((indent-tabs-mode nil))
     ad-do-it))
 
+
+
+;;
+;; Ecmascript mode
+;;
+(live-add-pack-lib "/ecmascript-mode/")
+(require 'ecmascript-mode)
+
+(setq auto-mode-alist (append '(("\\.es6$" . ecmascript-mode))
+                              auto-mode-alist))
