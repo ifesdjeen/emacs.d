@@ -61,7 +61,7 @@
 (depends-on "flycheck")
 
 (depends-on "haskell-mode")
-(depends-on "flymake-hlint")
+(depends-on "ghc")
 (depends-on "flycheck-haskell")
 
 (depends-on "ruby-mode")
