@@ -9,6 +9,7 @@
         c-electric-paren
         c-electric-pound
         c-electric-semi&comma
+        cider-load-buffer
         clipboard-kill-region
         cua-copy-region
         cua-cut-region
@@ -25,6 +26,7 @@
         haskell-interactive-mode-return
         haskell-mode-contextual-space
         haskell-newline-and-indent
+        helm-mini
         helm-projectile-find-file
         ido-find-file
         ido-hacks-execute-extended-command

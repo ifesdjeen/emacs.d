@@ -7,6 +7,7 @@
 (live-load-config-file "bindings.el")
 (live-load-config-file "smex.el")
 (live-load-config-file "ido.el")
+(live-load-config-file "textmate.el")
 
 ;;
 ;; Tabbar
@@ -82,4 +83,11 @@
 (require 'ecmascript-mode)
 
 (setq auto-mode-alist (append '(("\\.es6$" . ecmascript-mode))
+                              auto-mode-alist))
+
+
+(live-add-pack-lib "/less-mode/")
+(require 'less-mode)
+
+(setq auto-mode-alist (append '(("\\.less$" . less-mode))
                               auto-mode-alist))

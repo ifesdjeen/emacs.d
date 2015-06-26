@@ -244,15 +244,9 @@
 ;;(define-key textmate-global-map "s" 'textmate-goto-symbol)
 (define-key textmate-global-map "[" 'textmate-shift-left)
 (define-key textmate-global-map "]" 'textmate-shift-right)
-(define-key textmate-global-map "a" 'auto-complete)
 
-(define-key textmate-global-map "r" 'transpose-sexps)
-(define-key textmate-global-map "w" 'transpose-words)
-(define-key textmate-global-map "c" 'comment-or-uncomment-region)
+(define-key textmate-global-map "c" 'comment-or-uncomment-region-or-line)
 (define-key textmate-global-map ";" 'toggle-keyword-string)
-
-
-(define-key textmate-global-map "e" 'nrepl-eval-expression-at-point)
 
 ;;
 ;; Magit
