@@ -197,7 +197,7 @@
 (global-set-key (kbd "C-x \\") 'align-regexp)
 
 ;; comment region
-(global-set-key (kbd "M-/") 'comment-or-uncomment-region)
+(global-set-key (kbd "M-/") 'comment-or-uncomment-region-or-line)
 
 (global-set-key (kbd "C-s")   'isearch-forward)
 (global-set-key (kbd "C-r")   'isearch-backward)
@@ -223,7 +223,8 @@
 (global-set-key (kbd "C-x C-m") 'execute-extended-command)
 
 ;; Magit
-(global-set-key (kbd "C-x g") 'magit-status)
+;; (global-set-key (kbd "C-x g") 'magit-status)
+(global-set-key (kbd "C-c m s") 'magit-status)
 
 ;; Activate occur easily inside isearch
 (define-key isearch-mode-map (kbd "C-o")
