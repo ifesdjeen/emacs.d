@@ -33,6 +33,7 @@
         isearch-backward-regexp
         isearch-forward-regexp
         isearch-other-control-char
+        isearch-repeat-forward
         live-paredit-forward-kill-sexp
         org-beginning-of-line
         org-delete-char

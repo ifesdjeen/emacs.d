@@ -101,10 +101,11 @@
 
 ;;(depends-on "smartparens")
 ;;(depends-on "use-package")
-;;(depends-on "web-mode")
+(depends-on "web-mode")
 
 (depends-on "exec-path-from-shell")
 (depends-on "elisp-slime-nav")
 (depends-on "smooth-scrolling")
 
 (depends-on "babel")
+(depends-on "golden-ratio")

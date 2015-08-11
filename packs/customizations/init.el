@@ -79,15 +79,22 @@
 ;;
 ;; Ecmascript mode
 ;;
-(live-add-pack-lib "/ecmascript-mode/")
-(require 'ecmascript-mode)
-
-(setq auto-mode-alist (append '(("\\.es6$" . ecmascript-mode))
-                              auto-mode-alist))
-
-
 (live-add-pack-lib "/less-mode/")
 (require 'less-mode)
 
 (setq auto-mode-alist (append '(("\\.less$" . less-mode))
                               auto-mode-alist))
+
+
+
+(require 'golden-ratio)
+
+(golden-ratio-mode 1)
+
+
+(require 'web-mode)
+(setq web-mode-content-types-alist '(("jsx"  . "\\.es6?\\'")))
+(add-to-list 'auto-mode-alist '("\\.es6\\'" . web-mode))
+
+(setq web-mode-code-indent-offset 2)
+(setq web-mode-markup-indent-offset 2)
